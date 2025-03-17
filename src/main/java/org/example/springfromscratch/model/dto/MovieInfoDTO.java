@@ -1,4 +1,12 @@
 package org.example.springfromscratch.model.dto;
 
-public record MovieInfoDTO() {
-}
+import java.util.List;
+
+public record MovieInfoDTO (
+        MovieDTO movie,
+        List<String> nations,
+        List<String> genres,
+        List<String> directors,
+        List<String> actors,
+        long time
+) { }
